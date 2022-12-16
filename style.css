@@ -1,0 +1,19 @@
+.bloc{
+    width: 400px;
+    height: 300px;
+    background: crimson;
+}
+li{
+
+    box-shadow: 2px 2px 15px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 800px){
+  h3{
+      font-size: 50px;
+      color: red;
+  }
+}
