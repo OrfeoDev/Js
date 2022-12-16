@@ -147,20 +147,27 @@ btn1.addEventListener('click', () => {
 
     fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json())
         .then(data => {
-            for ( i = 0; i < data.length; i++) {
+            for (let i = 0; i < data.length; i++) {
 
                 let newLi = document.createElement('li');
                 let newTitreCarte = document.createElement('h2');
                 let newBodyCarte = document.createElement('p');
+                let newBtnSupp = document.createElement('button')
 
 
                 newTitreCarte.innerText = data[i].title;
                 newBodyCarte.innerText = data[i].body;
 
+
+
+
                 newLi.appendChild(newTitreCarte);
                 newLi.appendChild(newBodyCarte);
+                newBtnSupp.appendChild(newBodyCarte)
+
 
                 listes.appendChild(newLi);
+
             }
         })
 
